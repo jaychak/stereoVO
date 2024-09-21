@@ -1,24 +1,11 @@
 //************************************************************************
 // Stereo VO with BA.
 // No loop closure.
-// Aruco poses are landmarks in map.
 //
 // Jay Chakravarty
 
-// 2019 - 
-// 2022 Update.
-// 2024: Trying to improve the feature detection and tracking.
-// This version has imrpoved position tracking (removed the bottom part of the image from feature
-// detection)
-// But it still seg-faults randomly and at different parts of the trajectory at different times
-// This version has tracked down the seg-fault to the PnP function. 
-// The PnP function is now enclosed within a try-catch block, which on exception 
-// initializes new points using a new initialize_tracking() function.
-// Only thing to fix now, is that the new pose after re-initialization is at the map origin
-// And not at the last known good pose.
-//
-// This version fixes the re-initialization to use the last known good pose.
-// But it is still seg-faulting later on, at random points in the trajectory.
+// Does VO on a sequence of stereo image.
+// Trying to add fixed-lag smoothing with BA.
 
 //************************************************************************
 
