@@ -1,5 +1,10 @@
 # Stereo Visual Odometry (stereoVO)
 
+![Left image](stereoVOLeft.png)
+![Depth Image](stereoVODepth.png)
+![Stereo VO based Trajectory](stereoVOTraj.png)
+
+
 This repository provides a C++ implementation of stereo visual odometry (VO), estimating camera pose from sequential stereo/RGBD image pairs. It's designed for robotics, SLAM, and computer vision applications, focusing on real-time performance.
 
 ## Features
