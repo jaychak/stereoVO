@@ -12,6 +12,8 @@ This repository provides a C++ implementation of stereo visual odometry (VO), es
 - CMake 3.10+
 - OpenCV 4.0+
 - Eigen3
+- OpenGL
+- Pangolin
 
 ### Building the Project
 1. Clone the repository:
