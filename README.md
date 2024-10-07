@@ -17,3 +17,12 @@ This repository provides a C++ implementation of stereo visual odometry (VO), es
 1. Clone the repository:
    ```bash
    git clone https://github.com/jaychak/stereoVO.git
+
+2. Create a build directory and compile:
+   mkdir build && cd build
+   cmake ..
+   make
+
+3. Run the code (paths to left and right images are hard-coded) 
+   ./stereoVO
+
